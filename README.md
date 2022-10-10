@@ -64,7 +64,7 @@ paste("Varian : ", varian_1)
 ```
 
 Soal 2
-```R
+```
 Diketahui
 total_pasien = 20
 peluang_sembuh =  0.2
@@ -199,6 +199,7 @@ a.
 rexp() : simulasi kumpulan bilangan random dari distribusi exponential.
 ```
 ```R
+Code :
 #misal size = 5
 size = 5
 pel = rexp(size,rate = lambda)
@@ -206,6 +207,7 @@ paste("Hasil: ", pel)
 ```
 b.
 ```R
+Code :
 hist(rexp(10, rate = lambda), main = "Distribusi Exponensial untuk 10 bilangan random")
 hist(rexp(100, rate = lambda), main ="Distribusi Exponential untuk 100 bilangan random")
 hist(rexp(1000, rate = lambda), main ="Distribusi Exponential untuk 1000 bilangan random")
@@ -223,6 +225,7 @@ varian : sd()^2, sd() : fungsi untuk mendapatkan standar deviasi.
 set.seed(n) : untuk menghasilkan data random yang konsisten/sama walaupun dipanggil beberapa kali.
 ```
 ```R
+Code :
 set.seed(1)
 n = 100
 lambda = 3
@@ -248,27 +251,22 @@ mean : rata-rata
 sd : standar deviasi
 ```
 ```R
+Code :
 z_score = rnorm(n, mean, sd)
-```
 plot(z_score, main="Distribusi normal untuk 100 data random")
+```
 `![soal_6_a](https://user-images.githubusercontent.com/91018876/194887303-3581b49b-894e-42de-9896-1397d84b7d8c.png)
 
 b.
 ```R
+Code :
 hist(z_score, breaks = 50, main="5025211079_Andrian_DNhistogram")
 ```
 ![soal_6_b](https://user-images.githubusercontent.com/91018876/194887508-077b3e69-0995-4525-8185-7047c61302b3.png)
 
 c.
 ```R
+Code :
 varian = sd(z_score)^2
 paste("Varian : ", varian)
-```
-
-
-
-
-
-
-
 ```
