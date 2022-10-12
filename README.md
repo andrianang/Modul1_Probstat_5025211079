@@ -91,9 +91,10 @@ plot(x, y) : membuat sebuat grafik dari beberapa nilai x dan y
 ```R
 Code : 
 interval = 1:20
-plot(interval, dbinom(interval, total_pasien, peluang_sembuh), type='h')
+plot(interval, dbinom(interval, total_pasien, peluang_sembuh))
 ```
 ![soal_2_b](https://user-images.githubusercontent.com/91018876/194879515-5c8f4da5-91f5-4be8-abe8-23cb89aaf57e.png)
+
 c.
 ```R
 Code : 
